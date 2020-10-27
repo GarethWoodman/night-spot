@@ -5,6 +5,7 @@ A web application giving users the ability to book and attend social events.
 
 ## Database Schema
 ![Schema](mockups/UML_3.png)
+- User hosts many Events
 - User has many Bookings
 - Event has many Bookings
 
