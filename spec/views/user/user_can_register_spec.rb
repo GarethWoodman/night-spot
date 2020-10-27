@@ -1,10 +1,9 @@
 require 'rails_helper'
 
-RSpec.describe "User account register", type: :view do
-  describe 'a user can register with an account' do
-    #user = User.create(username: "gareth2020", email: 'gareth.woodman92@gmail.com', password: 'password')
+feature "User account register", type: :feature do
+  scenario 'a user can register with an account' do
     visit '/'
-    expect(page).to have_content 'Register'
+    expect(page).to have_content 'Registration'
 
     fill_in 'user[username]', with: 'gareth2020'
     fill_in 'user[email]', with: 'gareth.woodman92@gmail.com'
@@ -12,6 +11,6 @@ RSpec.describe "User account register", type: :view do
     fill_in 'user[password_confirmation]', with: 'password'
     find('[name=commit]').click
 
-    expect(current_path).to eq '/sessions/new'
+    expect((User.all).length).to eq 1
   end
 end
