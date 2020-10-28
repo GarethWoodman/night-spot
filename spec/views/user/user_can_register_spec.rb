@@ -11,6 +11,8 @@ feature "User account register", type: :feature do
     fill_in 'user[password_confirmation]', with: 'password'
     find('[name=commit]').click
 
-    expect((User.all).length).to eq 1
+
+
+    expect(User.last.username).to eq 'gareth2020'
   end
 end

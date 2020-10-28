@@ -2,9 +2,10 @@
 <p>Please login</p>
 <div>
   <%= form_for @user, :url => {:controller => 'sessions', :action => 'create'} do |f| %>
-  <%= f.text_field :email, placeholder: 'Email'%>
-  <br>
-  <%= f.text_field :password, placeholder: 'Password'%>
-  <br>
-  <%= f.submit 'Log in' %>
+    <%= f.text_field :email, placeholder: 'Email'%>
+    <br>
+    <%= f.text_field :password, placeholder: 'Password'%>
+    <br>
+    <%= f.submit 'Log in' %>
+  <% end %>
 </div>

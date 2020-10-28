@@ -8,8 +8,9 @@ class SessionsController < ApplicationController
 
     if @user&.authenticate(params[:user][:password])
       session[:user_id] = @user.id
-      redirect_to "/events"
+      redirect_to "events"
     else
-      redirect_to '/sessions/new', notice: 'Email and/or password is incorrect'
+      redirect_to 'sessions/new', notice: 'Email and/or password is incorrect'
+    end
   end
 end

@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'events/create'
   get 'events/index'
   get 'sessions/new'
-  get 'sessions/create'
+  post 'sessions/create'
   #get url and point to controller#method
   get '/', to: 'users#new'
   post 'users/create'
