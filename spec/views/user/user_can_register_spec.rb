@@ -9,9 +9,7 @@ feature "User account register", type: :feature do
     fill_in 'user[email]', with: 'gareth.woodman92@gmail.com'
     fill_in 'user[password]', with: 'password'
     fill_in 'user[password_confirmation]', with: 'password'
-    find('[name=commit]').click
-
-
+    click_button 'Create'
 
     expect(User.last.username).to eq 'gareth2020'
   end
