@@ -1,2 +1,14 @@
-<h1>Events#new</h1>
-<p>Find me in app/views/events/new.html.erb</p>
+<h1>Create Event</h1>
+<div>
+  <%= form_for @event, :url => {:controller => 'events', :action => 'create'} do |f| %>
+    <%= f.text_field :title, placeholder: 'Title' %>
+    <br>
+    <%= f.text_field :content, placeholder: 'Content'%>
+    <br>
+    <%= f.text_field :date, placeholder: '30/12/2020' %>
+    <br>
+    <div>
+      <%= f.submit 'Create', class: 'btn btn-primary ace-blue' %>
+    </div>
+  <% end %>
+</div>

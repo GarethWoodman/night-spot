@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'events/new'
-  get 'events/create'
+  post 'events/create'
   get 'events/index'
   get 'sessions/new'
   post 'sessions/create'

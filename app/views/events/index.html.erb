@@ -1,5 +1,6 @@
-<h1>Eventsx</h1>
+<h1>Events</h1>
 <p>List of events</p>
 <% for event in @events %>
   <%= event.title %>
 <% end %>
+<%= button_to "New Event", { :controller => 'events', :action => "new" }, :method => :get %>

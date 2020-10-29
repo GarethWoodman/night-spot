@@ -12,5 +12,7 @@ feature "User can login", type: :feature do
     fill_in 'user[email]', with: 'gareth.woodman92@gmail.com'
     fill_in 'user[password]', with: 'password'
     click_button 'Log in'
+
+    expect(page).to have_content 'Events'
   end
 end
