@@ -1,4 +1,5 @@
 <h1>Events</h1>
+<%= button_to "Profile", { :controller => 'users', :action => "show" }, :method => :get %>
 <p>List of events</p>
 <% for event in @events %>
   <%= event.title %>
