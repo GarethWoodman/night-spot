@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   get 'events/new'
   get 'events/index'
+  
+  post 'events/show'
   post 'events/create'
 
   get 'sessions/new'

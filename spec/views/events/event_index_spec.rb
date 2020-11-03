@@ -8,7 +8,7 @@ feature "Events index", type: :feature do
 
     visit 'events/index'
 
-    expect(page).to have_content 'Party!'
+    expect(page).to have_content 'Come to the party!'
 
   end
 end

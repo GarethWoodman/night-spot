@@ -2,6 +2,7 @@
 <%= button_to "Profile", { :controller => 'users', :action => "show" }, :method => :get %>
 <p>List of events</p>
 <% for event in @events %>
-  <%= event.title %>
+  <%= event.content %>
+  <%= button_to event.title, { :controller => 'events', :action => "show", :event => event.id }, :method => :post %>
 <% end %>
 <%= button_to "New Event", { :controller => 'events', :action => "new" }, :method => :get %>
