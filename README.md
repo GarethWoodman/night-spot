@@ -15,12 +15,12 @@ A web application giving users the ability to book and attend social events.
 - Bookings
 
 ## Mock Ups
-![Register](mockups/Register.png)\
+![Register](mockups/Register.png)
 _________________________
-![Login](mockups/Login.png)\
+![Login](mockups/Login.png)
 _________________________
-![Profile](mockups/Profile.png)\
+![Profile](mockups/Profile.png)
 _________________________
-![Events](mockups/Events.png)\
+![Events](mockups/Events.png)
 _________________________
 ![Event](mockups/Event.png)
