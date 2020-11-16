@@ -14,5 +14,7 @@ Rails.application.routes.draw do
   get '/login', to: 'sessions#new'
   post 'sessions/create'
 
+  post 'bookings/create'
+
   get 'hello_world/index'
 end
