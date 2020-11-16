@@ -7,7 +7,7 @@ class UsersController < ApplicationController
     user = User.create(user_params)
 
     if user.save
-      redirect_to '/sessions/new', notice: `Weclome #{user.username}`
+      redirect_to '/login', notice: `Weclome #{user.username}`
     else
       redirect_to '/', notice: 'Email and/or password are/is not meeting the requirements'
     end

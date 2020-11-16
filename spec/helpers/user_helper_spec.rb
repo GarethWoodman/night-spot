@@ -2,7 +2,7 @@ require 'rails_helper'
 
 module Authentication
   def login(user)
-    visit 'sessions/new'
+    visit '/login'
 
     expect(page).to have_content 'Login'
 

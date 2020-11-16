@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   #get url and point to controller#method
+
   get '/', to: 'users#new'
   post 'users/create'
   get 'users/show'
@@ -10,7 +11,7 @@ Rails.application.routes.draw do
   post 'events/show'
   post 'events/create'
 
-  get 'sessions/new'
+  get '/login', to: 'sessions#new'
   post 'sessions/create'
 
   get 'hello_world/index'
