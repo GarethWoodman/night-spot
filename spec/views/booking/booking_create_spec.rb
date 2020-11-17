@@ -17,5 +17,6 @@ feature "Booking create", type: :feature do
     click_button 'Book'
     
     expect(Booking.last.user.username).to eq 'gareth2020'
+    expect(page).to have_no_button('Book')
   end
 end
