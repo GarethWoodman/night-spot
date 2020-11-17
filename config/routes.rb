@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get 'events/new'
   get 'events/index'
   
-  post 'events/show'
+  get 'events/show'
   post 'events/create'
 
   get '/login', to: 'sessions#new'
