@@ -1,11 +1,16 @@
-<h1>Login</h1>
-<p>Please login</p>
-<div>
-  <%= form_for @user, :url => {:controller => 'sessions', :action => 'create'} do |f| %>
-    <%= f.text_field :email, placeholder: 'Email'%>
-    <br>
-    <%= f.text_field :password, placeholder: 'Password'%>
-    <br>
-    <%= f.submit 'Log in' %>
-  <% end %>
+<div class='main-content'>
+  <h1>Login</h1>
+  <p>Please login</p>
+  <div>
+    <%= form_for @user, :url => {:controller => 'sessions', :action => 'create'} do |f| %>
+      <%= f.text_field :email, placeholder: 'Email'%>
+      <br>
+      <%= f.text_field :password, placeholder: 'Password'%>
+      <br>
+      <br>
+      <div>
+        <%= f.submit 'Log in', class: 'btn btn-primary ace-blue' %>
+      </div>
+    <% end %>
+  </div>
 </div>
